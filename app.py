@@ -420,7 +420,7 @@ def lookup():
         if not query:
             return jsonify({'error': '请输入文本'}), 400
 
-        # ✅ 使用 asyncio 调用 async 方法
+        # 使用 asyncio 调用 async 方法
         result = asyncio.run(meme_searcher.ask(query))
         return jsonify({'result': result})
 

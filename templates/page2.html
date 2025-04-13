@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emoji to Text</title>
+    <title>Add emoji to texts</title>
       <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,36 +29,36 @@
     <div class="container">
         <h1>
             <i class="fa-solid fa-font"></i>
-            Emoji to Text
+            Emoji Decorator
         </h1>
 
         <div class="info-box">
-            <i class="fas fa-info-circle"></i> This feature will automatically convert emoji to text, making your text more readable！
+            <i class="fas fa-info-circle"></i> This function will automatically add appropriate emojis at the end of sentences, making your text more lively and fun!
         </div>
 
         <form id="emojiForm">
             <div class="form-group">
-                <label for="textInput">Enter the Emoji contents that need to be converted:</label>
-                <textarea id="textInput" placeholder="Please enter the emoji you would like to convert to the text..."></textarea>
+                <label for="textInput">Enter the text to which you want to add emojis:</label>
+                <textarea id="textInput" placeholder="Please enter words that you want to add emojis..."></textarea>
             </div>
 
             <button type="button" class="btn" onclick="addEmoji()">
                 <i class="fa-solid fa-comments"></i>
-                Convert Emoji
+                Add Emojis
             </button>
         </form>
 
         <div class="loading" id="loading">
             <div class="spinner"></div>
-            <p>Emoji being converted...</p>
+            <p>Emoji being added...</p>
         </div>
 
         <div class="result-container">
             <div class="result-title">
                 <i class="fas fa-result"></i>
-                Conversion results:
+                Add results:
             </div>
-            <div id="result">Waiting to convert...</div>
+            <div id="result">Waiting to add...</div>
         </div>
     </div>
 
